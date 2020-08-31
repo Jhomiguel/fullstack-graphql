@@ -5,14 +5,73 @@ import NewPet from "../components/NewPet";
 import { useQuery, useMutation } from "@apollo/react-hooks";
 import Loader from "../components/Loader";
 
+const PETS_FIELDS = gql`
+  fragment PetsFields on Pet {
+    id
+    name
+    img
+    type
+    vaccinated @client
+    owner {
+      id
+      age @client
+    }
+  }
+`;
+
+const GET_PETS = gql`
+  query getPets {
+    pets: getPets {
+      ...PetsFields
+    }
+  }
+  ${PETS_FIELDS}
+`;
+
+const ADD_PET = gql`
+  mutation addPet($newPet: NewPetInput!) {
+    newPet(input: $newPet) {
+      ...PetsFields
+    }
+  }
+  ${PETS_FIELDS}
+`;
+
 export default function Pets() {
   const [modal, setModal] = useState(false);
 
+  const { loading, error, data } = useQuery(GET_PETS);
+  const [createPet, newPetResponse] = useMutation(ADD_PET, {
+    update(cache, { data: { newPet } }) {
+      const { pets } = cache.readQuery({ query: GET_PETS });
+      cache.writeQuery({
+        query: GET_PETS,
+        data: { pets: [newPet, ...pets] },
+      });
+    },
+  });
+
   const onSubmit = (input) => {
     setModal(false);
+    createPet({
+      variables: { newPet: input },
+      optimisticResponse: {
+        __typename: "Mutation",
+        newPet: {
+          ...input,
+          id: "asdweasdqwe",
+          img: "",
+          __typename: "Pet",
+        },
+      },
+    });
   };
+  if (loading) return <Loader />;
+  if (error || newPetResponse.error) return <p>Error</p>;
 
-  const petsList = pets.data.pets.map((pet) => (
+  console.log(data.pets[0]);
+
+  const petsList = data.pets.map((pet) => (
     <div className="col-xs-12 col-md-4 col" key={pet.id}>
       <div className="box">
         <PetBox pet={pet} />

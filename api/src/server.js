@@ -5,7 +5,8 @@ const { models, db } = require("./db");
 
 const server = new ApolloServer({
   context() {
-    return { models };
+    const user = models.User.findOne();
+    return { models, user };
   },
   typeDefs,
   resolvers,

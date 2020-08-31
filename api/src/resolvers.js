@@ -26,11 +26,18 @@ module.exports = {
     },
   },
   Pet: {
-    // img(pet) {
-    //   return pet.type === "DOG"
-    //     ? "https://placedog.net/300/300"
-    //     : "http://placekitten.com/300/300";
-    // },
+    owner(pet, _, context) {
+      return context.models.User.findOne();
+    },
+    img(pet) {
+      return pet.type === "DOG"
+        ? "https://placedog.net/300/300"
+        : "http://placekitten.com/300/300";
+    },
   },
-  User: {},
+  User: {
+    pets(_, __, context) {
+      return context.models.Pet.findMany();
+    },
+  },
 };

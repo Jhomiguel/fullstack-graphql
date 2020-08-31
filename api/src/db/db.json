@@ -1,26 +1,162 @@
 {
   "user": {
     "id": "jBWMVGjm50l6LGwepDoty",
-    "username": "frontendmaster"
+    "username": "frontendmaster",
+    "pets": [
+      "5VJL39A3s-YPJTAY3ZVv3"
+    ]
   },
   "pet": [
-    {
-      "id": "jBWMVGjm50l6LGwepDoty",
-      "name": "piolin",
-      "createdAt": 12,
-      "type": "Dog"
-    },
-    {
-      "id": "jBWMVGjm50l6LGwedDoty",
-      "name": "frontendmaster",
-      "createdAt": 12,
-      "type": "Dog"
-    },
     {
       "id": "5VJL39A3s-YPJTAY3ZVv3",
       "createdAt": 1598563603628,
       "name": "Scott",
+      "type": "DOG",
+      "user": "jBWMVGjm50l6LGwepDoty"
+    },
+    {
+      "id": "iIMJUIethQMNIF8j2-pT4",
+      "createdAt": 1598737663417,
+      "name": "Kyle",
       "type": "DOG"
+    },
+    {
+      "id": "GG2lfcD7NejVNmc7dNEPS",
+      "createdAt": 1598737686293,
+      "name": "Kyle",
+      "type": "DOG"
+    },
+    {
+      "id": "w722rPUYDk0FXr0leJdh2",
+      "createdAt": 1598737699990,
+      "name": "Kyle",
+      "type": "DOG"
+    },
+    {
+      "id": "c7vmTFud9NpkPv1BtrlfN",
+      "createdAt": 1598738280331,
+      "name": "kite",
+      "type": "CAT"
+    },
+    {
+      "id": "UKtGDA_8_YC4otcJldE-1",
+      "createdAt": 1598739118309,
+      "name": "kirby",
+      "type": "DOG"
+    },
+    {
+      "id": "GJ1PtGP4QhykCoEmRBnt4",
+      "createdAt": 1598740466275,
+      "name": "Kyle",
+      "type": "DOG"
+    },
+    {
+      "id": "ksFDZbia8BJ3EY90Czd5O",
+      "createdAt": 1598740661255,
+      "name": "louis",
+      "type": "DOG"
+    },
+    {
+      "id": "dBCXbB-aJbKsioycQ9JEY",
+      "createdAt": 1598744340670,
+      "name": "Bobby",
+      "type": "DOG"
+    },
+    {
+      "id": "1FXVu9trbUFr9LBC_sqKm",
+      "createdAt": 1598751284278,
+      "name": "dsde",
+      "type": "DOG"
+    },
+    {
+      "id": "BejHl6-b1sKvoS3uuQlxp",
+      "createdAt": 1598751490088,
+      "name": "dasd",
+      "type": "CAT"
+    },
+    {
+      "id": "fUizs0LxngeHai70uuLHL",
+      "createdAt": 1598751546923,
+      "name": "Bobby",
+      "type": "DOG"
+    },
+    {
+      "id": "dw8Kax3Xv8rPT_JkCDXv8",
+      "createdAt": 1598751550611,
+      "name": "Bobby",
+      "type": "DOG"
+    },
+    {
+      "id": "f6S8PvzCG-_5FBcPuqZKF",
+      "createdAt": 1598751573619,
+      "name": "Bobby",
+      "type": "DOG"
+    },
+    {
+      "id": "QhJR9m-qtX2DZhfss4814",
+      "createdAt": 1598751800701,
+      "name": "asdad",
+      "type": "CAT"
+    },
+    {
+      "id": "N6rlIhx5vv6MZ7iCDMXZB",
+      "createdAt": 1598751843077,
+      "name": "ddw",
+      "type": "CAT"
+    },
+    {
+      "id": "SIVPZz1Y8BAcyyQ0k4VP5",
+      "createdAt": 1598752028496,
+      "name": "lel",
+      "type": "CAT"
+    },
+    {
+      "id": "22-fDU8xWuLRCaxPIEowO",
+      "createdAt": 1598752172480,
+      "name": "dogo",
+      "type": "DOG"
+    },
+    {
+      "id": "yOwBgkQHhwmE99zG86fPW",
+      "createdAt": 1598752477692,
+      "name": "dasd",
+      "type": "CAT"
+    },
+    {
+      "id": "3ykP7k4MqmX-QJEODMjpJ",
+      "createdAt": 1598752494130,
+      "name": "Osca",
+      "type": "DOG"
+    },
+    {
+      "id": "4p4qQ-wvcmx9ZZk4x13IT",
+      "createdAt": 1598822183708,
+      "name": "Bobby",
+      "type": "DOG"
+    },
+    {
+      "id": "4p4HXm71gw9YjtXZmNbfj",
+      "createdAt": 1598822427473,
+      "name": "Lulo",
+      "type": "DOG"
+    },
+    {
+      "id": "cMhJKUDXyLrc5tvA_GAYL",
+      "createdAt": 1598822498948,
+      "name": "Koko",
+      "type": "DOG"
+    },
+    {
+      "id": "qRXpvSNl4EAvLoPS9_SJr",
+      "createdAt": 1598822546936,
+      "name": "Bobby",
+      "type": "DOG"
+    },
+    {
+      "id": "5nj0YPJP3e3jqXGNefrwp",
+      "createdAt": 1598822944009,
+      "name": "Lulu",
+      "type": "CAT"
     }
   ]
 }
